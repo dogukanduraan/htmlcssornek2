@@ -1,0 +1,901 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html,
+body {
+    line-height: 1;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: Rockwell;
+    width: auto;
+    height: auto;
+}
+
+.sidebar {
+    width: 350px;
+    background: #161616;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    background: #E6E6E8;
+    height: auto;
+    weight: auto;
+}
+
+.sidebar .logo .fa-battle-net {
+    float: left;
+    margin-top: 15px;
+    margin-left: 50px;
+    color: #EF9B0F;
+    font-size: 60px;
+}
+
+.sidebar .title {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: #161616;
+    font-size: 60px;
+    font-family: FreeMono, monospace;
+    font-weight: bold;
+}
+
+.sidebar .title a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sidebar .status img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.sidebar .status {
+    font-family: FreeMono, monospace;
+    font-size: 25px;
+    text-align: center;
+    color: #EF9B0F;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.sidebar .status .gorev span {
+    font-size: 15px;
+    font-family: FreeMono, monospace;
+    margin-left: 8px;
+    color: #fff;
+    float: left;
+    padding-top: 12px;
+}
+
+.sidebar .status .fa-address-card {
+    font-size: 20px;
+    color: #7D5E00;
+    margin-left: 130px;
+    float: left;
+    padding-top: 10px;
+}
+
+.sidebar .anaMenu {
+    background: #EF9B0F;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.sidebar .anaMenu .anaMenu1 {
+    color: #161616;
+    float: left;
+    font-family: FreeMono, monospace;
+    padding: 2px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sidebar .anaSayfa {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.fa-home {
+    margin-right: 30px;
+    color: #EF9B0F
+}
+
+.sidebar .ekip {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.sidebar .ekip .fa-user-alt {
+    margin-right: 32px;
+    color: #EF9B0F
+}
+
+.sidebar .ekip .fa-square {
+    margin-left: 188px;
+    width: 35px;
+    height: 35px;
+    color: #EF9B0F;
+    margin-top: -10px;
+}
+
+.sidebar .ekip .ekip1 {
+    margin-left: -26px;
+    color: #161616;
+    font-family: FreeMono, monospace;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sidebar .satis {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.sidebar .satis .fa-shopping-cart {
+    margin-right: 32px;
+    color: #EF9B0F;
+}
+
+.sidebar .tablo {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.tablo .fa-chart-pie {
+    margin-right: 34px;
+    color: #EF9B0F
+}
+
+.sidebar .oneri {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.oneri .fa-comment {
+    margin-right: 36px;
+    color: #EF9B0F
+}
+
+.oneri .fa-square {
+    margin-left: 140px;
+    width: 35px;
+    height: 35px;
+    color: #EF9B0F;
+    margin-top: -10px;
+}
+
+.oneri .oneri1 {
+    margin-left: -30px;
+    color: #161616;
+    font-family: FreeMono, monospace;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sidebar .notDefteri {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.notDefteri .fa-clipboard {
+    margin-right: 40px;
+    color: #EF9B0F
+}
+
+.sidebar .yardim {
+    background: #EF9B0F;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.sidebar .yardim .yardim1 {
+    color: #181818;
+    float: left;
+    font-family: FreeMono, monospace;
+    padding: 2px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sidebar .onemli {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.onemli .fa-exclamation-circle {
+    margin-right: 32px;
+    color: #EF9B0F
+}
+
+.sidebar .bilgilendirme {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.bilgilendirme .fa-info {
+    margin-right: 42px;
+    color: #EF9B0F
+}
+
+.sidebar .dikkat {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.dikkat .fa-bomb {
+    margin-right: 32px;
+    color: #EF9B0F
+}
+
+.sidebar .sss {
+    background: #161616;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 20px;
+    font-family: FreeMono, monospace;
+}
+
+.sss .fa-question-circle {
+    margin-right: 32px;
+    color: #EF9B0F
+}
+
+.content {
+    height: auto;
+    width: auto;
+}
+
+.content .header {
+    width: 100%;
+    height: 80px;
+    background: #161616;
+    margin-bottom: 40px;
+}
+
+.content .header .fa-search {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.content .header .fa-envelope-open {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.content .header .fa-bell {
+    font-size: 20px;
+    float: right;
+    color: #fff;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.content .header .fa-comments {
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.content .header .fa-cog {
+    font-size: 20px;
+    float: right;
+    color: #fff;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.content .header .fa-times {
+    font-size: 20px;
+    float: right;
+    color: #fff;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.content .main {
+    background: #E6E6E8;
+    width: %100;
+    height: auto;
+}
+
+.content .main .anaSayfa2 {
+    padding: 30px;
+    font-family: FreeMono, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .main .fa-home {
+    margin-left: 60px;
+    margin-right: -10px;
+    font-size: 40px;
+    color: #7D5E00;
+}
+
+.content .main .fa-search {
+    float: right;
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+.content .header .nickname img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    float: right;
+    margin-top: -45px;
+    margin-right: 260px;
+}
+
+.content .header .nickname1 {
+    float: right;
+    color: #fff;
+    margin-right: 300px;
+    margin-top: -35px;
+    font-family: FreeMono, monospace;
+}
+
+.content .main .space1 {
+    height: 3px;
+    width: 100%;
+    background: #161616;
+    margin-top: 15px;
+}
+
+.content .main .kutu1 {
+    color: #161616;
+    font-weight: bold;
+    border-radius: 40px 40px;
+    font-size: 30px;
+    padding: 20px;
+    background: #EF9B0F;
+    width: 15%;
+    height: 5%x;
+    margin-left: 60px;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    margin-right: 50px;
+    font-family: FreeMono, monospace;
+    float: left;
+}
+
+.content .main .kutu1 .fa-info-circle {
+    float: left;
+    margin-top: 120px;
+    color: #fff;
+}
+
+.content .main .kutu1 .kullaniciSayisi {
+    color: #161616;
+    margin-top: 100px;
+    margin-right: -170px;
+    font-size: 55px;
+    float: right;
+}
+
+.content .main .fa-user {
+    float: right;
+    margin-right: 145px;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #161616;
+}
+
+.content .main .kutu2 {
+    color: #161616;
+    font-weight: bold;
+    border-radius: 40px 40px;
+    font-size: 30px;
+    padding: 20px;
+    background: #7D5E00;
+    width: 15%;
+    height: 5%;
+    margin-left: 60px;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    margin-right: 50px;
+    font-family: FreeMono, monospace;
+    float: left;
+}
+
+.content .main .kutu2 .fa-info-circle {
+    float: left;
+    margin-top: 120px;
+    color: #fff;
+}
+
+.content .main .kutu2 .satislar {
+    color: #161616;
+    margin-top: 100px;
+    margin-right: -180px;
+    font-size: 55px;
+    float: right;
+}
+
+.content .main .fa-shopping-cart {
+    float: right;
+    margin-right: 145px;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #161616;
+}
+
+.content .main .kutu3 {
+    color: #161616;
+    font-weight: bold;
+    border-radius: 40px 40px;
+    font-size: 30px;
+    padding: 20px;
+    background: #EF9B0F;
+    width: 15%;
+    height: 5%x;
+    margin-left: 60px;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    margin-right: 50px;
+    font-family: FreeMono, monospace;
+    float: left;
+}
+
+.content .main .kutu3 .fa-info-circle {
+    float: left;
+    margin-top: 120px;
+    color: #fff;
+}
+
+.content .main .kutu3 .siparis {
+    color: #161616;
+    margin-top: 100px;
+    margin-right: -170px;
+    font-size: 55px;
+    float: right;
+}
+
+.content .main .fa-credit-card {
+    float: right;
+    margin-right: 145px;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #161616;
+}
+
+.content .main .kutu4 {
+    color: #161616;
+    font-weight: bold;
+    border-radius: 40px 40px;
+    font-size: 30px;
+    padding: 20px;
+    background: #7D5E00;
+    width: 15%;
+    height: 5%x;
+    margin-left: 60px;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    margin-right: 50px;
+    font-family: FreeMono, monospace;
+    float: left;
+}
+
+.content .main .kutu4 .fa-info-circle {
+    float: left;
+    margin-top: 120px;
+    color: #fff;
+}
+
+.content .main .kutu4 .toplamKullanici {
+    color: #161616;
+    margin-top: 100px;
+    margin-right: -195px;
+    font-size: 55px;
+    float: right;
+}
+
+.content .main .fa-child {
+    float: right;
+    margin-right: 165px;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #161616;
+}
+
+.content .row {
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+}
+
+.content .row .yapilacaklar {
+    width: 50%;
+    height: 500px;
+    background: #161616;
+    font-family: FreeMono, monospace;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+.content .row .inventory {
+    width: 36%;
+    height: 300px;
+    background: #7D5E00;
+    margin: 20px;
+}
+
+.content .yapilacaklar .baslik {
+    display: flex;
+    box-sizing: border-box;
+    font-family: FreeMono, monospace;
+    color: #EF9B0F;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.content .yapilacaklar .baslik .ph {
+    width: 80%;
+    padding: 20px;
+}
+
+.content .row .yapilacaklar .baslik .paging {
+    display: flex;
+}
+
+.content .row .yapilacaklar .baslik .paging .page {
+    width: 20%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.content .row .yapilacaklar .baslik .paging .page .fa-square {
+    color: #353535;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: 1px;
+}
+
+.content .row .yapilacaklar .baslik .paging .pageNumber {
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    font-family: FreeMono, monospace;
+    position: absolute;
+}
+
+.content .row .liste {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .row .liste .list {
+    display: flex;
+    padding: 20px;
+    width: 97%;
+    background: #161616;
+    height: 25px;
+    align-items: center;
+    flex-direction: space-between;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content .row .liste .list span {
+    margin-left: 20px;
+}
+
+.content .row .liste .list input {
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    font-family: FreeMono, monospace;
+    background: #EF9B0F;
+}
+
+.content .row .liste .list div {
+    margin-left: 20px;
+    ;
+}
+
+.content .row .liste .list .uyari {
+    width: 140px;
+    height: 30px;
+    background: #EF9B0F;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.content .row .yapilacaklar .add {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+}
+
+.content .row .yapilacaklar #addItem {
+    width: 75px;
+    height: 35px;
+    background: #EF9B0F;
+    border-radius: px;
+    margin-top: 25px;
+    font-family: FreeMono, monospace;
+}
+
+.content .tablo img {
+    width: 30%;
+    height: 30%;
+    float: right;
+    margin-right: 300px;
+    padding-bottom: 100px;
+    margin-top: -650px;
+}
+
+.content .footer {
+    width: 100%;
+    height: 25px;
+    background: #999999;
+    text-align: center;
+    float: left;
+}
+
+.content .footer1 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-family: FreeMono, monospace;
+}
+
+.content .footer2 {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-family: FreeMono, monospace;
+}
